@@ -1,0 +1,28 @@
+model_path:
+  dnabert6:
+    huggingface: /HOME/scz3435/.cache/huggingface/hub/models--jerryji1993--dnabert6
+    dim: 768
+
+dir_path:
+  work_path: .
+  source_code: ./src
+
+experiment_name: dnabert
+training_config:
+  learning_rate: 0.1
+  epochs: 5
+  batch_size: 32
+  device:
+    debug: "cpu"
+    other: "cuda"
+  momentum: 0.9
+  optimizier: "SGD"
+
+  save_path: ./out/model
+
+randseed: 2
+input_seq_len: 300
+cter: true
+
+githash: ""
+taskname: ""
